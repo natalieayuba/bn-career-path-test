@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-4xl font-bold leading-snug;
+  }
+
+  h2 {
+    @apply text-2xl font-bold leading-snug;
+  }
+}
+
+@layer components {
+  .text-secondary {
+    @apply text-sm text-black/60;
+  }
+}

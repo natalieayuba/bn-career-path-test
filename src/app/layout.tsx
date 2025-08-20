@@ -8,7 +8,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Bright Network | Career Path Quiz",
+  title: "Career Path Test | Bright Network",
   description:
     "Discover careers that match your skills and personality and receive personalised advice to guide your next steps.",
   icons: {
@@ -25,7 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} antialiased`}>{children}</body>
+      <body className={`${montserrat.className} text-black antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
